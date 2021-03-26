@@ -778,9 +778,9 @@ img {
   display: flex;
   align-items: center;
 }
-/* .checkbox-link {
+.checkbox-link {
   color: var(--accent-color);
-} */
+}
 
 .modal-form-term:checked + .modal-form-check-desk::before {
   background-image: url('../images/checkbox-icon.svg');
@@ -789,7 +789,7 @@ img {
   background-position: center;
 }
 .modal-form-term:focus + .modal-form-check-desk::before {
-  box-shadow: 0 0 0 2px;
+  box-shadow: 0 0 0 2px var(--accent-color);
 }
 
 .modal-form-btn {
