@@ -680,14 +680,20 @@ img {
   top: 8px;
   right: 8px;
   cursor: pointer;
-  background: transparent;
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.icon-close:focus,
-.icon-close:hover {
+/* .modal-close-btn:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.icon-close:hover,
+.icon-close:focus {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
   opacity: 0;
@@ -783,7 +789,7 @@ img {
   background-position: center;
 }
 .modal-form-term:focus + .modal-form-check-desk::before {
-  box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 2px;
 }
 
 .modal-form-btn {
