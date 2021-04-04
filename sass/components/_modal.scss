@@ -26,18 +26,20 @@
   outline: none;
   &:focus,
   &:hover {
-  outline: none;
-  border-color: var(--accent-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-
-.icon-close:hover,
-.icon-close:focus {
-  fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.icon-close {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;

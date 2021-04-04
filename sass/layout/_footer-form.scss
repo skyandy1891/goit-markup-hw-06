@@ -27,10 +27,9 @@
 }
 .subscribe-input {
   color: #ffffff;
-}
-
-.subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-form button {
